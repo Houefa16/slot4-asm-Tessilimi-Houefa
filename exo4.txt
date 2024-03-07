@@ -1,0 +1,34 @@
+Exercice:
+
+You have to implement a function which takes two parameters. The first one is
+a string and the second one is the character X to find in this string.
+If you find the character X, then return his position in the alphabet. If it's not
+in the string or anye error case, return "-84".
+
+Example:
+    my_func("Mourad est gEntil", 'a')     ====> 'a'   ====> return (1)
+    my_func("Mourad est gEntil", 'e')     ====> 'e'   ====> return (5)
+    my_func("Mourad est gEntil", 'g')     ====> 'g'   ====> return (7)
+    my_func("Mourad est gEntil", 't')     ====> 't'   ====> return (20)
+    my_func("Mourad est gEntil", 'M')     ====> 'M'   ====> return (13)
+    my_func("Mourad est gEntil", 'E')     ====> 'E'   ====> return (5)
+    my_func("Mourad est gEntil", 'w')     ====> NULL  ====> return (-84)
+    my_func("Mourad est gEntil", '9')     ====> NULL  ====> return (-84)
+    my_func("Mourad est gEntil", 'Z')     ====> NULL  ====> return (-84)
+    my_func("Mourad est gEntil", '\0')    ====> NULL  ====> return (-84)
+    my_func("Mourad est gEntil", NULL)    ====> NULL  ====> return (-84)
+    my_func("", NULL)                     ====> NULL  ====> return (-84)
+
+Pay attention, we only want alphabetics characters (a-z) or (A-Z), so if the character is not an alphabetic character,
+return the error -84.
+
+
+Steps:
+
+1) Name your file fac.asm
+
+2) Name your function "my_func" and don't forget to import it (global)
+
+3) Compile with: "make re"
+
+4) Test with: ./main
