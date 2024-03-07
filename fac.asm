@@ -27,6 +27,5 @@ find:
     ret
     
 out:
-    xor rax, rax
     mov rax, -84
     ret
